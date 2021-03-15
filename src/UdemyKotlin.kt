@@ -1,7 +1,11 @@
 import java.lang.IllegalArgumentException
 
 fun main() {
+    val user1 = User(1, "Tai");
+    println(user1.name);
 
+    val user2 = User(1, "Tai");
+    println(user1.equals(user2));
 }
 
 class MobilePhone(osName: String, branch: String, model: String) {
@@ -33,4 +37,7 @@ class Car {
         this.owner = "Tai"
     }
 }
+
+data class User(val id: Long, val name: String) // data class has to have at least 1 param
+
 
