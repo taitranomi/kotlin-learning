@@ -6,7 +6,12 @@ fun main() {
 
     val user2 = User(1, "Tai");
     println(user1.equals(user2));
+
+    val user3 = user1.copy(name = "Andreas");
+    println(user3);
 }
+
+
 
 class MobilePhone(osName: String, branch: String, model: String) {
     init {
@@ -14,7 +19,7 @@ class MobilePhone(osName: String, branch: String, model: String) {
     }
 }
 
-class Car {
+class Car(type: String, name: String) {
     lateinit var owner: String
 
     val myBrand: String = "BMW"
