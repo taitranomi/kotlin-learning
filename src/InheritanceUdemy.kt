@@ -52,4 +52,10 @@ class ElectricCar(name: String, brand: String, batteryLife: Double) : Automobile
     }
 }
 
+// Lambda Expression
+
+val sum: (Int, Int) -> Int = {a: Int, b: Int -> a + b};
+
+val divide = {a: Int, b: Int -> a / b};
+
 
